@@ -1,0 +1,183 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Blocks.gd" type="Script" id=2]
+[ext_resource path="res://Stage2.gd" type="Script" id=3]
+
+[sub_resource type="CubeMesh" id=17]
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_color = Color( 0.188235, 0.807843, 0.282353, 1 )
+roughness = 0.85
+
+[sub_resource type="ConcavePolygonShape" id=19]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=20]
+
+[sub_resource type="ConcavePolygonShape" id=21]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=22]
+
+[sub_resource type="NoiseTexture" id=16]
+
+[sub_resource type="SpatialMaterial" id=23]
+albedo_color = Color( 0.137255, 0.137255, 0.482353, 1 )
+metallic = 0.47
+metallic_specular = 0.56
+metallic_texture = SubResource( 16 )
+metallic_texture_channel = 1
+roughness = 0.63
+
+[sub_resource type="ConcavePolygonShape" id=24]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="CubeMesh" id=25]
+
+[sub_resource type="ConcavePolygonShape" id=26]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="BoxShape" id=27]
+
+[sub_resource type="PlaneMesh" id=28]
+
+[sub_resource type="SpatialMaterial" id=29]
+
+[sub_resource type="ConvexPolygonShape" id=30]
+points = PoolVector3Array( -1, 0, -1, -1, 0, 1, 1, 0, -1, 1, 0, 1 )
+
+[sub_resource type="BoxShape" id=31]
+
+[sub_resource type="CubeMesh" id=32]
+
+[sub_resource type="SpatialMaterial" id=33]
+albedo_color = Color( 0.0392157, 0.235294, 0.654902, 1 )
+
+[sub_resource type="PrismMesh" id=34]
+
+[sub_resource type="SpatialMaterial" id=35]
+albedo_color = Color( 0.0313726, 0.121569, 0.705882, 1 )
+
+[node name="Stage2" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="Platforms" type="Spatial" parent="."]
+transform = Transform( 5, 0, 0, 0, 1, 0, 0, 0, 5, -8, 1, 2 )
+
+[node name="Platform 1" type="MeshInstance" parent="Platforms"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, -6, 0 )
+mesh = SubResource( 17 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 18 )
+
+[node name="StaticBody" type="StaticBody" parent="Platforms/Platform 1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Platforms/Platform 1/StaticBody"]
+shape = SubResource( 19 )
+
+[node name="Platform 2" type="MeshInstance" parent="Platforms"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4, -10, -0.799999 )
+mesh = SubResource( 20 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 18 )
+
+[node name="StaticBody2" type="StaticBody" parent="Platforms/Platform 2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Platforms/Platform 2/StaticBody2"]
+shape = SubResource( 21 )
+
+[node name="Platform 3" type="MeshInstance" parent="Platforms"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, -12, -0.800001 )
+mesh = SubResource( 22 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 23 )
+
+[node name="StaticBody" type="StaticBody" parent="Platforms/Platform 3"]
+process_priority = 1
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.2 )
+collision_layer = 65535
+
+[node name="CollisionShape" type="CollisionShape" parent="Platforms/Platform 3/StaticBody"]
+shape = SubResource( 24 )
+
+[node name="Start" type="MeshInstance" parent="Platforms"]
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 2, 1.6, -1, -0.4 )
+mesh = SubResource( 25 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 18 )
+
+[node name="StaticBody2" type="StaticBody" parent="Platforms/Start"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Platforms/Start/StaticBody2"]
+shape = SubResource( 26 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.60043, 1.06833, -5.09226 )
+
+[node name="Area" type="Area" parent="Player"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Player/Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+shape = SubResource( 27 )
+
+[node name="Void_Detection" type="MeshInstance" parent="."]
+transform = Transform( 100, 0, 0, 0, 1, 0, 0, 0, 100, 2, -13, 1 )
+mesh = SubResource( 28 )
+material/0 = SubResource( 29 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="StaticBody" type="StaticBody" parent="Void_Detection"]
+transform = Transform( 1.7, 0, 0, 0, 1, 0, 0, 0, 1.7, -1, 0, 0.92 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2" type="CollisionShape" parent="Void_Detection/StaticBody"]
+transform = Transform( 1, -7.57723e-11, 6.5722e-29, -1.0084e-10, 1, 1.45519e-11, 0, 1.45519e-11, 1, 1, 0, -1 )
+shape = SubResource( 30 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="objects" type="Spatial" parent="."]
+
+[node name="RigidBody" type="RigidBody" parent="objects"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 5, 2 )
+mass = 11.32
+can_sleep = false
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="objects/RigidBody"]
+shape = SubResource( 31 )
+
+[node name="MeshInstance" type="MeshInstance" parent="objects/RigidBody"]
+mesh = SubResource( 32 )
+skeleton = NodePath("../..")
+
+[node name="Arrow" type="MeshInstance" parent="."]
+transform = Transform( 2.98023e-08, 0, 1, 0, 5, 0, -1, 0, 2.98023e-08, -35.2, 11, 0 )
+mesh = SubResource( 17 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 33 )
+
+[node name="Arrow Head" type="MeshInstance" parent="Arrow"]
+transform = Transform( 3, 0, 0, 0, -0.4, 3.89414e-07, 0, -1.55766e-07, -1, 0, -1.4, 0 )
+mesh = SubResource( 34 )
+skeleton = NodePath("../../..")
+material/0 = SubResource( 35 )
+
+[node name="StaticBody" type="StaticBody" parent="Arrow/Arrow Head"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Arrow/Arrow Head/StaticBody"]
+shape = SubResource( 19 )
+
+[node name="StaticBody" type="StaticBody" parent="Arrow"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Arrow/StaticBody"]
+shape = SubResource( 19 )
+
+[connection signal="area_entered" from="Player/Area" to="Player" method="_on_Area_area_entered"]
